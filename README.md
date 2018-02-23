@@ -14,10 +14,10 @@
 
 ##### util: Httputil (  sendOkHttpRequest(String address,okhttp3.Callback callback) 向服务器请求一次
 
-#####       utility (  handleProvinceResponse(String response)  解析json并保存到数据库</br>
-#####                  handleCityResponse(String response,int provinceId)</br>
-#####                  handleCountyResponse(String response,int cityId)</br>
-#####                  handleWeatherResponse(String response)   解析Weather数据并返回</br>
+#####       utility (  handleProvinceResponse(String response)  解析json并保存到数据库
+#####                  handleCityResponse(String response,int provinceId)
+#####                  handleCountyResponse(String response,int cityId)
+#####                  handleWeatherResponse(String response)   解析Weather数据并返回
 #####                  handleWeatherAirResponse(String response)
                   
 ##### service: AutoUpdateService  每八小时向服务器请求一次数据并保存
