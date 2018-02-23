@@ -16,10 +16,10 @@
  gson:                         JSON数据结构
 
  util: Httputil (  sendOkHttpRequest(String address,okhttp3.Callback callback) 向服务器请求一次
-       utility (  handleProvinceResponse(String response)  解析json并保存到数据库
-                  handleCityResponse(String response,int provinceId)
-                  handleCountyResponse(String response,int cityId)
-                  handleWeatherResponse(String response)   解析Weather数据并返回
+       utility (  handleProvinceResponse(String response)  解析json并保存到数据库</br>
+                  handleCityResponse(String response,int provinceId)</br>
+                  handleCountyResponse(String response,int cityId)</br>
+                  handleWeatherResponse(String response)   解析Weather数据并返回</br>
                   handleWeatherAirResponse(String response)
                   
                    
@@ -27,8 +27,8 @@
 
 > ChooseAreaFragment ( 
 
-> WeatherActivity  ( requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存
->                    showWeatherInfo(Weather weather) 更新UI信息
->                    showWeatherAirInfo(WeatherAir air)
+> WeatherActivity  ( requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存</br>
+>                    showWeatherInfo(Weather weather) 更新UI信息</br>
+>                    showWeatherAirInfo(WeatherAir air)</br>
 >                    loadBingPic()
                      
