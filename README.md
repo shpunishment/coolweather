@@ -24,9 +24,8 @@
 
 ##### ChooseAreaFragment ( 适配ListView 请求服务器数据 数据库查询省市县 
 
-##### eatherActivity  ( requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存
-
-#####                  showWeatherInfo(Weather weather) 更新UI信息
-#####                showWeatherAirInfo(WeatherAir air)
-#####                loadBingPic()
+##### WeatherActivity  ( requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存
+#####                    showWeatherInfo(Weather weather) 更新UI信息
+#####                    showWeatherAirInfo(WeatherAir air)
+#####                    loadBingPic()
                      
