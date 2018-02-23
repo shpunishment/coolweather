@@ -8,24 +8,25 @@
 #### 通过OkHttp向服务器发送请求, 获取天气的数据，用GSON解析发送回来的数据，并用SharedPreferences的键值对保存在手机
 #### 设置Android的定时Service，每八小时向服务器请求一次，并用SharedPreferences保存在手机
 
-##### db: Province , City , County  数据库类
+    db: Province , City , County  数据库类
 
-##### gson:                         JSON数据结构
+    gson:                         JSON数据结构
 
-##### util: Httputil (  sendOkHttpRequest(String address,okhttp3.Callback callback) 向服务器请求一次
+    util: Httputil (  sendOkHttpRequest(String address,okhttp3.Callback callback) 向服务器请求一次
 
-#####       utility (  handleProvinceResponse(String response)  解析json并保存到数据库
-#####                  handleCityResponse(String response,int provinceId)
-#####                  handleCountyResponse(String response,int cityId)
-#####                  handleWeatherResponse(String response)   解析Weather数据并返回
-#####                  handleWeatherAirResponse(String response)
-                  
-##### service: AutoUpdateService  每八小时向服务器请求一次数据并保存
+    utility：
+        handleProvinceResponse(String response)  解析json并保存到数据库
+        handleCityResponse(String response,int provinceId)
+        handleCountyResponse(String response,int cityId)
+        handleWeatherResponse(String response)   解析Weather数据并返回
+        handleWeatherAirResponse(String response)
 
-##### ChooseAreaFragment ( 适配ListView 请求服务器数据 数据库查询省市县 
+    service: AutoUpdateService  每八小时向服务器请求一次数据并保存
 
-##### WeatherActivity  ( requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存
-#####                    showWeatherInfo(Weather weather) 更新UI信息
-#####                    showWeatherAirInfo(WeatherAir air)
-#####                    loadBingPic()
-                     
+    ChooseAreaFragment ( 适配ListView 请求服务器数据 数据库查询省市县 
+
+    WeatherActivity : 
+        requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存
+        showWeatherInfo(Weather weather) 更新UI信息
+        showWeatherAirInfo(WeatherAir air)
+        loadBingPic()
