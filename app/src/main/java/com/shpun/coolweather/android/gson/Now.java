@@ -19,7 +19,7 @@ public class Now {
     public String temperature;
 
     @SerializedName("cond_txt")
-    public String condTxt;
+    public String condText;
 
 
 }

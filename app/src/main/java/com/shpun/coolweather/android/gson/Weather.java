@@ -16,12 +16,11 @@ public class Weather {
 
     public Update update;
 
-    public Air_now_city aqi;
-
     public Now now;
 
+    // 让JSON字段与java字段建立映射
     @SerializedName("lifestyle")
-    public List<Lifestyle> lifestyle;
+    public List<Lifestyle> lifestyleList;
 
     @SerializedName("daily_forecast")
     public List<DailyForecast> forecastList;
