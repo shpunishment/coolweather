@@ -11,10 +11,24 @@
 
 > 设置Android的定时Service，每八小时向服务器请求一次，并用SharedPreferences保存在手机
 
-> db: Province , City , County 
+> db: Province , City , County  数据库类
 
-> gson:
+> gson:                         JSON数据结构
 
-> util: Httputil,utility
+> util: Httputil (  sendOkHttpRequest(String address,okhttp3.Callback callback) 向服务器请求一次
+>       utility (  handleProvinceResponse(String response)  解析json并保存到数据库
+>                  handleCityResponse(String response,int provinceId)
+>                  handleCountyResponse(String response,int cityId)
+>                  handleWeatherResponse(String response)   解析Weather数据并返回
+>                  handleWeatherAirResponse(String response)
+                  
+                   
+> service: AutoUpdateService  每八小时向服务器请求一次数据并保存
 
-> service: AutoUpdateService
+> ChooseAreaFragment ( 
+
+> WeatherActivity  ( requestWeather(final String weatherId) 向服务器请求天气数据 交给handleWeatherResponse(String response)解析 并保存
+>                    showWeatherInfo(Weather weather) 更新UI信息
+>                    showWeatherAirInfo(WeatherAir air)
+>                    loadBingPic()
+                     
