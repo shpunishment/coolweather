@@ -1,5 +1,5 @@
 # coolweather
->>>> 综合Fragment，ListView，DrawerLayout，ScrollView等常用控件
+> 综合Fragment，ListView，DrawerLayout，ScrollView等常用控件
 
 > 综合LitePal，GSON，OkHttp,Glide等开源库
 
@@ -16,7 +16,9 @@
 > gson:                         JSON数据结构
 
 > util: Httputil (  sendOkHttpRequest(String address,okhttp3.Callback callback) 向服务器请求一次
->       utility (  handleProvinceResponse(String response)  解析json并保存到数据库
+>       utility (  
+                   
+                   handleProvinceResponse(String response)  解析json并保存到数据库
 >                  handleCityResponse(String response,int provinceId)
 >                  handleCountyResponse(String response,int cityId)
 >                  handleWeatherResponse(String response)   解析Weather数据并返回
