@@ -30,3 +30,14 @@
         showWeatherInfo(Weather weather) 更新UI信息
         showWeatherAirInfo(WeatherAir air)
         loadBingPic()
+
+MainActivity 显示天气信息
+<br/>
+<img src="https://github.com/shpunishment/coolweather/blob/master/app/src/main/res/drawable-xxhdpi/mainActivity.png" width="250" height="450" />
+
+<br/>
+<img src="https://github.com/shpunishment/coolweather/blob/master/app/src/main/res/drawable-xxhdpi/mainActivity(2).png" width="250" height="450" />
+
+Drawerlayout 选择地区
+<br/>
+<img src="https://github.com/shpunishment/coolweather/blob/master/app/src/main/res/drawable-xxhdpi/drawerLayout.png" width="250" height="450" />
